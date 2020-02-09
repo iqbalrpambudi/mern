@@ -42,7 +42,7 @@ export default class CreateStudent extends Component {
       email: this.state.email,
       rollno: this.state.rollno
     };
-    axios.post('http://localhost:4000/students/create-student', studentObject)
+    axios.post('https://hutangapp.herokuapp.com/students/create-student', studentObject)
       .then(res => console.log(res.data));
 
     this.setState({ name: '', email: '', rollno: '' })
